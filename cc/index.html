@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="row" v-for="image in images">
+      <div class="col-12 col-md-4"><img class="img-fluid" :src="image[0]"></div>
+      <div class="col-12 col-md-4"><img class="img-fluid" :src="image[1]"></div>
+      <div class="col-12 ml-md-2"><img class="img-fluid" :src="image[2]"></div>
+    </div>
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="module">
+  import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.esm.browser.js';
+  const app = new Vue({
+    el: "#app",
+    data: {
+      images: [
+        []
+      ]
+    }
+  });
+</script>
+</body>
+</html>
