@@ -13,8 +13,8 @@
   </style>
   <div class="container" id="app" style="background-color: white; border-left: solid 1px #000; border-right: solid 1px #000">
     <div class="row my-2 border-top border-bottom py-2" v-for="image in images">
-      <div class="col col-md-4"><img class="img-fluid" :src="image[0]"></div>
-      <div class="col col-md-4"><img class="img-fluid" :src="image[1]"></div>
+      <div class="col-6 col-md-4"><img class="img-fluid" :src="image[0]"></div>
+      <div class="col-6 col-md-4"><img class="img-fluid" :src="image[1]"></div>
       <div class="col col-md-4 border-left"><img class="img-fluid" v-if="2 in image" :src="image[2]"></div>
     </div>
   </div>
